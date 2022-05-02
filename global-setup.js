@@ -5,7 +5,8 @@ module.exports = async config => {
   const page = await browser.newPage()
   // Authorizing with test user
   // This step will provide completion of the precondition in every case: Logged user on /projects page
-  await page.goto("https://app.stage.lokalise.cloud/");
+  await page.goto("https://app.stage.lokalise.cloud/", {timeout:120000});
+  await page.waitForTimeout(8000);
 
   await page.fill(
     'input[placeholder="user@company.com"]',

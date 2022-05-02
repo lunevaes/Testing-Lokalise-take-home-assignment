@@ -17,7 +17,7 @@ Before running the test, please make sure that NodeJS and npm are installed. You
 - https://nodejs.org/en/download/ (npm is optional for installation from the file as well)
 
 or install by command line:
-- https://nodejs.org/en/download/package-manager/#windows-1
+- https://nodejs.org/en/download/package-manager/
 
 In order to run the test suite, you need to download the project, install Playwright and other dependencies by the command from the folder of the project: 
 

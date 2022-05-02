@@ -418,6 +418,8 @@ test.describe.serial("suite", () => {
         ".page.current > div:nth-child(1) > div.col-md-9 > table > tbody > tr:nth-child(2) > td:nth-child(2) > div:nth-child(1) > div > div:nth-child(1) > span"
       )
       .click();
+    
+    await page.waitForTimeout(600);
 
     await page
       .locator(

@@ -17,6 +17,8 @@ module.exports = async (config) => {
   await page.fill('input[placeholder="password"]', "password");
 
   await page.locator("button:has-text('Log in')").click();
+  
+  await page.waitForTimeout(8000);
 
   // Save signed-in state to 'storageState.json'.
 

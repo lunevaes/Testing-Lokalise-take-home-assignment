@@ -297,6 +297,8 @@ test.describe.serial("suite", () => {
       )
       .fill("Test");
 
+    await page.waitForTimeout(600);
+
     await page
       .locator(
         "div.editor-panel.bottom-panel > div.lokalise-tooltip.editor-tooltip.editor-button > button > img"
@@ -381,6 +383,8 @@ test.describe.serial("suite", () => {
       )
       .fill("Test");
 
+    await page.waitForTimeout(600);
+
     await page
       .locator(
         "div.editor-panel.bottom-panel > div.lokalise-tooltip.editor-tooltip.editor-button > button > img"
@@ -399,6 +403,8 @@ test.describe.serial("suite", () => {
         "div.CodeMirror.cm-s-default.CodeMirror-wrap > div:nth-child(1) > textarea"
       )
       .fill("Tests");
+
+    await page.waitForTimeout(600);
 
     await page
       .locator(
@@ -419,6 +425,8 @@ test.describe.serial("suite", () => {
       )
       .fill("Toets");
 
+    await page.waitForTimeout(600);
+
     await page
       .locator(
         "div.editor-panel.bottom-panel > div.lokalise-tooltip.editor-tooltip.editor-button > button > img"
@@ -432,11 +440,15 @@ test.describe.serial("suite", () => {
       )
       .click();
 
+    await page.waitForTimeout(600);
+
     await page
       .locator(
         "div.CodeMirror.cm-s-default.CodeMirror-wrap > div:nth-child(1) > textarea"
       )
       .fill("Toetse");
+
+    await page.waitForTimeout(600);
 
     await page
       .locator(
